@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+
+    <style>
+        body{
+            background: antiquewhite;
+        }
+        .rg_layout{
+            width: 1000px;
+            height: 500px;
+            border: 8px solid ghostwhite;
+            background: white;
+            margin: auto;
+            margin-top: 20px;
+
+        }
+        /*
+        *********************
+        */
+        .rg_left{
+            /*border: 1px solid red;*/
+            float: left;
+            box-sizing: border-box;
+            margin: 15px;
+
+
+        }
+        .rg_left_p{
+            margin: 0px;
+        }
+        #rg_left_p1{
+            color: orange;
+            font-size: 20px;
+        }
+        #rg_left_p2{
+            color: gray;
+            font-size: 20px;
+        }
+
+        /*
+        *********************
+         */
+        .rg_center{
+            /*border: 1px solid red;*/
+            margin: auto;
+            width: fit-content;
+            /*float: left;*/
+        }
+        .td_left{
+            height: 45px;
+            text-align: right;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        #username,#password,#email,#name,#tel{
+            width: 250px;
+            height: 30px;
+            border: 2px solid gainsboro;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        #btn_sub{
+            width: 100px;
+            height: 30px;
+            background-color: gold;
+            border: 0px;
+        }
+        /*
+        *********************
+         */
+        .rg_right{
+            width: fit-content;
+            /*border: 1px solid red;*/
+            float: right;
+            margin: 15px;
+        }
+        .rg_right_p{
+            margin: 0px;
+        }
+        .rg_right p a{
+            color: pink;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="rg_layout">
+        <div class="rg_left">
+            <p class="rg_left_p" id="rg_left_p1">新用户注册</p>
+            <p class="rg_left_p" id="rg_left_p2">USER REGISTER</p>
+        </div>
+        <div class="rg_right">
+            <p class="rg_right_p">已有账户？<a href="#">立即登录</a></p>
+        </div>
+        <div class="rg_center">
+            <div class="rg_form">
+                <form action="#" method="get">
+                    <table>
+                        <tr>
+                            <td class="td_left"><label for="username">用户名</label></td>
+                            <td class="td_right"><input type="text" name="username" id="username" placeholder="请输入用户名"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td_left"><label for="password">密码</label></td>
+                            <td class="td_right"><input type="password" name="password" id="password" placeholder="请输入密码"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td_left"><label for="email">emali</label></td>
+                            <td class="td_right"><input type="email" name="email" id="email" placeholder="请输入邮箱"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td_left"><label for="name">姓名</label></td>
+                            <td class="td_right"><input type="text" name="name" id="name" placeholder="请输入姓名"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td_left"><label for="tel">手机号</label></td>
+                            <td class="td_right"><input type="text" name="tel" id="tel" placeholder="请输入手机号"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td_left">性别</td>
+                            <td class="td_right"><input type="radio" name="gender" value="male">男
+                                <input type="radio" name="gender" value="female">女
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="td_left"><label for="birthday">出生日期</label></td>
+                            <td class="td_right"><input type="date" name="birthday" id="birthday"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td_left"><label for="province">省份</label></td>
+                            <td class="td_right">
+                                <select name="province" id="province">
+                                    <option value="1">北京</option>
+                                    <option value="2">上海</option>
+                                    <option value="3">广州</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" align="center"><input id="btn_sub" type="submit" value="提交" ></td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
